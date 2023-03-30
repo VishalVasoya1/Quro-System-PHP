@@ -19,7 +19,7 @@ To address the challenges that shopping mall staff face in managing inventory an
 <h3>Metrics:</h3>
 To measure the success and improvement of our QR code system, we will use the following metrics:
 
-*Customer satisfaction: We will conduct surveys or collect feedback from customers who have used the system to identify areas for improvement and enhance the customer experience.
+* Customer satisfaction: We will conduct surveys or collect feedback from customers who have used the system to identify areas for improvement and enhance the customer experience.
 
 Time savings: We will measure the amount of time saved by customers by not having to wait in long queues, carry shopping bags, or manually enter orders. This will help us quantify the impact of our system on customer convenience.
 
