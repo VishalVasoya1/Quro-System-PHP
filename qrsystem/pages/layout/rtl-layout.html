@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from www.bootstrapdash.com/demo/connect-plus/jquery/template/demo_1/pages/layout/rtl-layout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 08:49:11 GMT -->
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Connect Plus</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+    <link rel="stylesheet" href="../../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="../../../assets/vendors/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.5.d">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../../assets/css/demo_1/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../../assets/images/favicon.png" />
+  </head>
+  <body class="rtl">
+    <div class="container-scroller">
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="https://www.bootstrapdash.com/demo/connect-plus/jquery/template/assets/images/logo.svg" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="https://www.bootstrapdash.com/demo/connect-plus/jquery/template/assets/images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-stretch">
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-menu"></span>
+          </button>
+          <div class="search-field d-none d-xl-block">
+            <form class="d-flex align-items-center h-100" action="#">
+              <div class="input-group">
+                <div class="input-group-prepend bg-transparent">
+                  <i class="input-group-text border-0 mdi mdi-magnify"></i>
+                </div>
+                <input type="text" class="form-control bg-transparent border-0" placeholder="البحث عن المنتجات">
+              </div>
+            </form>
+          </div>
+          <ul class="navbar-nav navbar-nav-right">
+            <li class="nav-item  dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle" id="reportDropdown" href="#" data-toggle="dropdown" aria-expanded="false"> تقارير </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="reportDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-file-pdf mr-2"></i>بي دي إف </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-file-excel mr-2"></i>تفوق</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-file-word mr-2"></i>وثيقة </a>
+              </div>
+            </li>
+            <li class="nav-item  dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle" id="projectDropdown" href="#" data-toggle="dropdown" aria-expanded="false"> مشاريع </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="projectDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-eye-outline mr-2"></i>عرض مشروع </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <i class="mdi mdi-pencil-outline mr-2"></i>تحرير المشروع</a>
+              </div>
+            </li>
+            <li class="nav-item nav-language dropdown d-none d-md-block">
+              <a class="nav-link dropdown-toggle" id="languageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="nav-language-icon">
+                  <i class="flag-icon flag-icon-us" title="us" id="us"></i>
+                </div>
+                <div class="nav-language-text">
+                  <p class="mb-1 text-black">الإنجليزية</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown" aria-labelledby="languageDropdown">
+                <a class="dropdown-item" href="#">
+                  <div class="nav-language-icon ml-2">
+                    <i class="flag-icon flag-icon-ae" title="ae" id="ae"></i>
+                  </div>
+                  <div class="nav-language-text">
+                    <p class="mb-1 text-black">عربى</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">
+                  <div class="nav-language-icon ml-2">
+                    <i class="flag-icon flag-icon-gb" title="GB" id="gb"></i>
+                  </div>
+                  <div class="nav-language-text">
+                    <p class="mb-1 text-black">الإنجليزية</p>
+                  </div>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item nav-profile dropdown">
+              <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <div class="nav-profile-img">
+                  <img src="../../../assets/images/faces/face28.png" alt="image">
+                </div>
+                <div class="nav-profile-text">
+                  <p class="mb-1 text-black">هنري كلاين</p>
+                </div>
+              </a>
+              <div class="dropdown-menu navbar-dropdown dropdown-menu-right p-0 border-0 font-size-sm" aria-labelledby="profileDropdown" data-x-placement="bottom-end">
+                <div class="p-3 text-center bg-primary">
+                  <img class="img-avatar img-avatar48 img-avatar-thumb" src="../../../assets/images/faces/face28.png" alt="">
+                </div>
+                <div class="p-2">
+                  <h5 class="dropdown-header text-uppercase pr-2 text-dark text-right">خيارات المستخدم</h5>
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                    <span>صندوق الوارد</span>
+                    <span class="p-0">
+                      <span class="badge badge-primary ml-1">3</span>
+                      <i class="mdi mdi-email-open-outline"></i>
+                    </span>
+                  </a>
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                    <span>الملف الشخصي</span>
+                    <span class="p-0">
+                      <span class="badge badge-success ml-1">1</span>
+                      <i class="mdi mdi-account-outline"></i>
+                    </span>
+                  </a>
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="javascript:void(0)">
+                    <span>الإعدادات</span>
+                    <i class="mdi mdi-settings"></i>
+                  </a>
+                  <div role="separator" class="dropdown-divider"></div>
+                  <h5 class="dropdown-header text-uppercase  pl-2 text-dark mt-2">أجراءات</h5>
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                    <span>حساب قفل</span>
+                    <i class="mdi mdi-lock"></i>
+                  </a>
+                  <a class="dropdown-item py-1 d-flex align-items-center justify-content-between" href="#">
+                    <span>تسجيل خروج</span>
+                    <i class="mdi mdi-logout"></i>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <i class="mdi mdi-email-outline"></i>
+                <span class="count-symbol bg-success"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="messageDropdown">
+                <h6 class="p-3 mb-0 bg-primary text-white py-4 text-right">رسائل</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../../assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">مارك يرسل لك رسالة</h6>
+                    <p class="text-gray mb-0"> علامة نرسل لك رسالة 1 دقيقة مضت </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../../assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">كريغ نرسل لك رسالة</h6>
+                    <p class="text-gray mb-0">كريغ نرسل لك رسالة </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <img src="../../../assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">تحديث صورة الملف الشخصي </h6>
+                    <p class="text-gray mb-0"> منذ 18 دقيقة</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">4 رسائل جديدة</h6>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#" data-toggle="dropdown">
+                <i class="mdi mdi-bell-outline"></i>
+                <span class="count-symbol bg-danger"></span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list" aria-labelledby="notificationDropdown">
+                <h6 class="p-3 mb-0 bg-primary text-white py-4 text-right">إشعارات</h6>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-success">
+                      <i class="mdi mdi-calendar"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">حدث اليوم</h6>
+                    <p class="text-gray ellipsis mb-0"> مجرد تذكير بأن لديك حدث اليوم </p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-warning">
+                      <i class="mdi mdi-settings"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">الإعدادات</h6>
+                    <p class="text-gray ellipsis mb-0"> تحديث لوحة القيادة</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item preview-item">
+                  <div class="preview-thumbnail">
+                    <div class="preview-icon bg-info">
+                      <i class="mdi mdi-link-variant"></i>
+                    </div>
+                  </div>
+                  <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                    <h6 class="preview-subject font-weight-normal mb-1">إطلاق المسؤول</h6>
+                    <p class="text-gray ellipsis mb-0"> مشرف جديد نجاح باهر!</p>
+                  </div>
+                </a>
+                <div class="dropdown-divider"></div>
+                <h6 class="p-3 mb-0 text-center">اطلع على جميع الإشعارات</h6>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="mdi mdi-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <div class="container-fluid page-body-wrapper">
+        <div id="settings-trigger"><i class="mdi mdi-settings"></i></div>
+        <div id="theme-settings" class="settings-panel">
+          <i class="settings-close mdi mdi-close"></i>
+          <p class="settings-heading">جلود جانبية</p>
+          <div class="sidebar-bg-options selected" id="sidebar-default-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div>الإفتراضي
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div>ضوء
+          </div>
+          <p class="settings-heading mt-2">جلد الرأس</p>
+          <div class="color-tiles mx-0 px-4">
+            <div class="tiles primary"></div>
+            <div class="tiles success"></div>
+            <div class="tiles warning"></div>
+            <div class="tiles danger"></div>
+            <div class="tiles info"></div>
+            <div class="tiles dark"></div>
+            <div class="tiles default light"></div>
+          </div>
+        </div>
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-category">الرئيسية</li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">
+                <span class="icon-bg"><i class="mdi mdi-cube menu-icon"></i></span>
+                <span class="menu-title">لوحة القيادة</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#page-layouts" aria-expanded="false" aria-controls="page-layouts">
+                <span class="icon-bg"> <i class="mdi mdi-apps menu-icon"></i> </span>
+                <span class="menu-title">تخطيطات الصفحة</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="page-layouts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="boxed-layout.html">صندوق</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="rtl-layout.html">ار تي ال</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#sidebar-layouts" aria-expanded="false" aria-controls="sidebar-layouts">
+                <span class="icon-bg"><i class="mdi mdi-playlist-play menu-icon"></i></span>
+                <span class="menu-title">الشريط الجانبي</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="sidebar-layouts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="compact-menu.html">القائمة المدمجة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="sidebar-collapsed.html">قائمة الرموز </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="sidebar-hidden.html">الشريط الجانبي المخفية</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="sidebar-hidden-overlay.html">تراكب الشريط الجانبي</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="sidebar-fixed.html">الشريط الجانبي ثابت</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../samples/widgets.html">
+                <span class="icon-bg"><i class="mdi mdi-widgets menu-icon"></i></span>
+                <span class="menu-title">الحاجيات</span>
+              </a>
+            </li>
+            <li class="nav-item nav-category">ميزات واجهة المستخدم</li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="icon-bg"><i class="mdi mdi-crosshairs-gps menu-icon"></i></span>
+                <span class="menu-title">واجهة المستخد</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/accordions.html">أكورديون</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/buttons.html">زر</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/badges.html">شارات</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/breadcrumbs.html">فتات الخبز</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/dropdowns.html">قائِمة مُنْسَدِلة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/modals.html">الحوار</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/progress.html">شريط التقدم</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/pagination.html">ترقيم الصفحات</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/tabs.html">علامات التبويب</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/typography.html">الاسلوب والظهور</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/tooltips.html">تلميح</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/dragula.html">Dragula</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/clipboard.html">الحافظة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/context-menu.html">قائمة السياق</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/slider.html">الانزلاق</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/colcade.html">Colcade</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/carousel.html">دائري</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/loaders.html">رافعات</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../ui-features/treeview.html">عرض الشجرة</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ui-features/popups.html">
+                <span class="icon-bg"><i class="mdi mdi-forum menu-icon"></i></span>
+                <span class="menu-title">يظهر فجأة</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../ui-features/notifications.html">
+                <span class="icon-bg"><i class="mdi mdi-bell-ring menu-icon"></i></span>
+                <span class="menu-title">إخطارات</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
+                <span class="icon-bg"><i class="mdi mdi-contacts menu-icon"></i></span>
+                <span class="menu-title">الرموز</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="icons">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../icons/mdi.html">رموز Mdi</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../icons/flag-icons.html">أيقونات العلم</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../icons/font-awesome.html">الرموز fontawsome</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../icons/simple-line-icon.html">أيقونات خط بسيط</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../icons/themify.html">Themify الرموز</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#forms" aria-expanded="false" aria-controls="forms">
+                <span class="icon-bg"><i class="mdi mdi-format-list-bulleted menu-icon"></i></span>
+                <span class="menu-title">نماذج</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="forms">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../forms/basic_elements.html">عناصر النموذج</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../forms/advanced_elements.html"> العناصر المتقدمة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../forms/validation.html">التحقق من صحة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../forms/wizard.html">ساحر</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">المحررين</li>
+            <li class="nav-item">
+              <a class="nav-link" href="../forms/text_editor.html">
+                <span class="icon-bg"><i class="mdi mdi-file-document menu-icon"></i></span>
+                <span class="menu-title">محرري النصوص</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../forms/code_editor.html">
+                <span class="icon-bg"><i class="mdi mdi-code-not-equal-variant menu-icon"></i></span>
+                <span class="menu-title">محرري الكود</span>
+              </a>
+            </li>
+            <li class="nav-item nav-category">شرح البيانات </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+                <span class="icon-bg"><i class="mdi mdi-chart-bar menu-icon"></i></span>
+                <span class="menu-title">الرسوم البيانية</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="charts">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../charts/chartjs.html">Chart Js</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/morris.html">موريس</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/flot-chart.html">Flot</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/google-charts.html">جوجل</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/sparkline.html">Sparkline</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/c3.html">C3</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/chartist.html">Chartist</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../charts/justGage.html">Just Gage</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+                <span class="icon-bg"><i class="mdi mdi-table-large menu-icon"></i></span>
+                <span class="menu-title">الجداول</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="tables">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../tables/basic-table.html">الجدول الأساسي</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../tables/data-table.html">Data table</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../tables/js-grid.html"> Js Grid</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../tables/sortable-table.html">جدول قابل للفرز</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#maps" aria-expanded="false" aria-controls="maps">
+                <span class="icon-bg"><i class="mdi mdi-map-marker-radius menu-icon"></i></span>
+                <span class="menu-title">خرائط</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="maps">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../maps/google-maps.html">خرائط جوجل</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../maps/mapael.html">Mapael</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../maps/vector-map.html">خريطة المتجهات</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">صفحات عينة</li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+                <span class="icon-bg"><i class="mdi mdi-lock menu-icon"></i></span>
+                <span class="menu-title">صفحات المستخدم</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../samples/login.html"> تسجيل الدخول 1</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/login-2.html">تسجيل الدخول 2</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/mutli-level-login.html"> متعددة خطوة تسجيل الدخو </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/register.html"> تسجيل </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/register-2.html"> الاشتراك اثنين</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/lock-screen.html"> اقفل الشاشة </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
+                <span class="icon-bg"><i class="mdi mdi-security menu-icon"></i></span>
+                <span class="menu-title">صفحات خطأ</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="error">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../samples/error-404.html"> 404 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/error-500.html"> 500 </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+                <span class="icon-bg"><i class="mdi mdi-medical-bag menu-icon"></i></span>
+                <span class="menu-title">الصفحات العامة</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="general-pages">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../samples/blank-page.html"> صفحة فارغة </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/profile.html"> الملف الشخصي </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/faq.html">الأسئلة المطروحة</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/faq-2.html">أسئلة مطروحة 2 </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/news-grid.html"> شبكة الأخبار </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/timeline.html"> الجدول الزمني </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/user-listing.html"> قائمة المستخدم </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/portfolio.html"> Portfolio </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item nav-category">تطبيقات</li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" href="#e-commerce" aria-expanded="false" aria-controls="e-commerce">
+                <span class="icon-bg"><i class="mdi mdi-shopping menu-icon"></i></span>
+                <span class="menu-title">التجارة الإلكترونية</span>
+                <i class="menu-arrow"></i>
+              </a>
+              <div class="collapse" id="e-commerce">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../samples/invoice.html"> فاتورة </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/pricing-table.html"> جدول التسعير </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/orders.html"> طلب </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/emailer.html"> قالب البريد الإلكتروني </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/product-catalogue.html"> كتالوج المنتج </a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../samples/project-list.html"> قائمة المشروع </a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/kanban-board.html">
+                <span class="icon-bg"><i class="mdi mdi-tablet-dashboard menu-icon"></i></span>
+                <span class="menu-title">كانبان بورد</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/email.html">
+                <span class="icon-bg"><i class="mdi mdi-email menu-icon"></i></span>
+                <span class="menu-title">البريد الإلكتروني</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/calendar.html">
+                <span class="icon-bg"><i class="mdi mdi-calendar-today menu-icon"></i></span>
+                <span class="menu-title">التقويم</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/todo.html">
+                <span class="icon-bg"><i class="mdi mdi-playlist-edit menu-icon"></i></span>
+                <span class="menu-title">عمل قائمة</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/tickets.html">
+                <span class="icon-bg"><i class="mdi mdi-ticket menu-icon"></i></span>
+                <span class="menu-title">تذاكر</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/chat.html">
+                <span class="icon-bg"><i class="mdi mdi-chat menu-icon"></i></span>
+                <span class="menu-title">دردشة</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../apps/gallery.html">
+                <span class="icon-bg"><i class="mdi mdi-image-filter-frames menu-icon"></i></span>
+                <span class="menu-title">صالة عرض</span>
+              </a>
+            </li>
+            <li class="nav-item documentation-link">
+              <a class="nav-link" href="http://www.bootstrapdash.com/demo/connect_plus/jquery/pages/documentation.html">
+                <span class="icon-bg">
+                  <i class="mdi mdi-file-document-box menu-icon"></i>
+                </span>
+                <span class="menu-title">توثيق</span>
+              </a>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="user-details">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <div class="d-flex align-items-center">
+                      <div class="sidebar-profile-img">
+                        <img src="../../../assets/images/faces/face28.png" alt="image">
+                      </div>
+                      <div class="sidebar-profile-text">
+                        <p class="mb-1">هنري كلاين</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="badge badge-danger">3</div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="#" class="nav-link"><i class="mdi mdi-settings menu-icon"></i>
+                  <span class="menu-title">الإعدادات</span>
+                </a>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="#" class="nav-link"><i class="mdi mdi-speedometer menu-icon"></i>
+                  <span class="menu-title">قم بجولة</span></a>
+              </div>
+            </li>
+            <li class="nav-item sidebar-user-actions">
+              <div class="sidebar-user-menu">
+                <a href="#" class="nav-link"><i class="mdi mdi-logout menu-icon"></i>
+                  <span class="menu-title">تسجيل خروج</span></a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="d-xl-flex justify-content-between align-items-start">
+              <h2 class="text-dark font-weight-bold mb-2"> نظرة عامة على لوحة القيادة </h2>
+              <div class="d-sm-flex justify-content-xl-between align-items-center mb-2">
+                <div class="btn-group bg-white p-3" role="group" aria-label="Basic example">
+                  <button type="button" class="btn btn-link text-light py-0">7 أيام</button>
+                  <button type="button" class="btn btn-link text-dark py-0  border-right">شهر واحد</button>
+                  <button type="button" class="btn btn-link text-light py-0 border-right">3 أشهر</button>
+                </div>
+                <div class="dropdown mr-0 mr-md-4 mt-2 mt-lg-0">
+                  <button class="btn bg-white dropdown-toggle p-3 d-flex align-items-center" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <i class="mdi mdi-calendar ml-1"></i> 24 Mar 2019 - 24 Mar 2019 </button>
+                  <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton1">
+                    <h6 class="dropdown-header">Select</h6>
+                    <a class="dropdown-item" href="#">24 Mar 2019 - 24 Mar 2019 </a>
+                    <a class="dropdown-item" href="#">24 Apr 2019 - 24 May 2019 </a>
+                    <a class="dropdown-item" href="#">24 Jun 2019 - 24 Jul 2019 </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="d-sm-flex justify-content-between align-items-center transaparent-tab-border {">
+                  <ul class="nav nav-tabs tab-transparent" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link" id="home-tab" data-toggle="tab" href="#" role="tab" aria-selected="true">المستخدمين</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" id="business-tab" data-toggle="tab" href="#business-1" role="tab" aria-selected="false">اعمال</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="performance-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">أداء</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" id="conversion-tab" data-toggle="tab" href="#" role="tab" aria-selected="false">تحويلات</a>
+                    </li>
+                  </ul>
+                  <div class="d-md-block d-none">
+                    <a href="#" class="text-light p-1"><i class="mdi mdi-view-dashboard"></i></a>
+                    <a href="#" class="text-light p-1"><i class="mdi mdi-dots-vertical"></i></a>
+                  </div>
+                </div>
+                <div class="tab-content tab-transparent-content">
+                  <div class="tab-pane fade show active" id="business-1" role="tabpanel" aria-labelledby="business-tab">
+                    <div class="row">
+                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <h5 class="mb-2 text-dark font-weight-normal">طلب</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">932.00</h2>
+                            <div class="dashboard-progress dashboard-progress-1 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-lightbulb icon-md absolute-center text-dark"></i></div>
+                            <p class="mt-4 mb-0">منجز</p>
+                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">5443</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <h5 class="mb-2 text-dark font-weight-normal">زائرين فريدين من نوعهم</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">756,00</h2>
+                            <div class="dashboard-progress dashboard-progress-2 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-account-circle icon-md absolute-center text-dark"></i></div>
+                            <p class="mt-4 mb-0">زيادة منذ أمس</p>
+                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">50%</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3  col-lg-6 col-sm-6 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <h5 class="mb-2 text-dark font-weight-normal">الانطباعات</h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">100,38</h2>
+                            <div class="dashboard-progress dashboard-progress-3 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-eye icon-md absolute-center text-dark"></i></div>
+                            <p class="mt-4 mb-0">زيادة منذ أمس</p>
+                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">35%</h3>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-3 col-lg-6 col-sm-6 grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body text-center">
+                            <h5 class="mb-2 text-dark font-weight-normal">متابعون </h5>
+                            <h2 class="mb-4 text-dark font-weight-bold">4250k</h2>
+                            <div class="dashboard-progress dashboard-progress-4 d-flex align-items-center justify-content-center item-parent"><i class="mdi mdi-cube icon-md absolute-center text-dark"></i></div>
+                            <p class="mt-4 mb-0">انخفضت منذ أمس</p>
+                            <h3 class="mb-0 font-weight-bold mt-2 text-dark">25%</h3>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 grid-margin">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-sm-12">
+                                <div class="d-flex justify-content-between align-items-center mb-4">
+                                  <h4 class="card-title mb-0">النشاط الأخير</h4>
+                                  <div class="dropdown dropdown-arrow-none">
+                                    <button class="btn p-0 text-dark dropdown-toggle" type="button" id="dropdownMenuIconButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      <i class="mdi mdi-dots-vertical"></i>
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuIconButton1">
+                                      <h6 class="dropdown-header">الإعدادات</h6>
+                                      <a class="dropdown-item" href="#">عمل</a>
+                                      <a class="dropdown-item" href="#">عمل آخر</a>
+                                      <a class="dropdown-item" href="#">شيء آخر هنا</a>
+                                      <div class="dropdown-divider"></div>
+                                      <a class="dropdown-item" href="#"> رابط منفصل</a>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-sm-4 grid-margin  grid-margin-lg-0">
+                                <div class="wrapper pb-5 border-bottom">
+                                  <div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
+                                    <p class="mb-0 text-dark">اجمالي الربح</p>
+                                    <span class="text-success"><i class="mdi mdi-arrow-up"></i>2.95%</span>
+                                  </div>
+                                  <h3 class="mb-0 text-dark font-weight-bold">$ 92556</h3>
+                                  <canvas id="total-profit"></canvas>
+                                </div>
+                                <div class="wrapper pt-5">
+                                  <div class="text-wrapper d-flex align-items-center justify-content-between mb-2">
+                                    <p class="mb-0 text-dark">نفقات</p>
+                                    <span class="text-success"><i class="mdi mdi-arrow-up"></i>52.95%</span>
+                                  </div>
+                                  <h3 class="mb-4 text-dark font-weight-bold">$ 59565</h3>
+                                  <canvas id="total-expences"></canvas>
+                                </div>
+                              </div>
+                              <div class="col-lg-9 col-sm-8 grid-margin  grid-margin-lg-0">
+                                <div class="pr-0 pr-lg-4">
+                                  <div class="d-xl-flex justify-content-between align-items-center mb-2">
+                                    <div class="d-lg-flex align-items-center mb-lg-2 mb-xl-0">
+                                      <h3 class="text-dark font-weight-bold ml-2 mb-0">مبيعات الأجهزة</h3>
+                                      <h5 class="mb-0">(نمو 62 ٪)</h5>
+                                    </div>
+                                    <div class="d-lg-flex">
+                                      <p class="ml-2 mb-0">وحدة زمنية:</p>
+                                      <p class="text-dark font-weight-bold mb-0">GMT-0400 التوقيت الصيفي الشرقي</p>
+                                    </div>
+                                  </div>
+                                  <div class="graph-custom-legend clearfix" id="device-sales-legend"></div>
+                                  <canvas id="device-sales-rtl"></canvas>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4 grid-margin stretch-card">
+                        <div class="card card-danger-gradient">
+                          <div class="card-body mb-4">
+                            <h4 class="card-title text-white">الاحتفاظ بالحساب</h4>
+                            <canvas id="account-retension"></canvas>
+                          </div>
+                          <div class="card-body bg-white pt-4">
+                            <div class="row pt-4">
+                              <div class="col-sm-6">
+                                <div class="text-center">
+                                  <h4>تحويلات</h4>
+                                  <h1 class="text-dark font-weight-bold mb-md-3">$306</h1>
+                                </div>
+                              </div>
+                              <div class="col-sm-6">
+                                <div class="text-center border-right border-md-0">
+                                  <h4>إلغاء</h4>
+                                  <h1 class="text-dark font-weight-bold">$1,520</h1>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-8  grid-margin stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-xl-flex justify-content-between mb-2">
+                              <h4 class="card-title">تحليلات مشاهدات الصفحة</h4>
+                              <div class="graph-custom-legend primary-dot" id="pageViewAnalyticLengend"></div>
+                            </div>
+                            <canvas id="page-view-analytic-rtl"></canvas>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
+                        <div class="card">
+                          <div class="card-body recent-activity">
+                            <h4 class="card-title">نشاط الأخير</h4>
+                            <div class="d-flex mb-3">
+                              <div>
+                                <div class="activity-info bg-danger"> I </div>
+                              </div>
+                              <div class="activity-details">
+                                <h4 class="text-dark font-weight-normal">إيفا باربر</h4>
+                                <p class="mb-0">إضافة مهمة جديدة على trello</p>
+                                <p class="text-small mb-0">05:58AM</p>
+                              </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                              <div class="activity-info bg-warning"> D </div>
+                              <div class="activity-details">
+                                <h4 class="text-dark font-weight-normal">دوروثي روميرو</h4>
+                                <p class="mb-0">إضافة مهمة جديدة على trello</p>
+                                <p class="text-small mb-0">02:50PM</p>
+                              </div>
+                            </div>
+                            <div class="d-flex mb-3">
+                              <div class="activity-info bg-success"> R </div>
+                              <div class="activity-details">
+                                <h4 class="text-dark font-weight-normal">ريكاردو هوكينز</h4>
+                                <p class="mb-0">إضافة مهمة جديدة على trello</p>
+                                <p class="text-small mb-0">05:22AM</p>
+                              </div>
+                            </div>
+                            <div class="d-flex">
+                              <div class="activity-info hide-border bg-info"> N </div>
+                              <div class="activity-details">
+                                <h4 class="text-dark font-weight-normal">نوح مونتغمري</h4>
+                                <p class="mb-0">إضافة مهمة جديدة على trello</p>
+                                <p class="text-small mb-0">08:19PM</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <h4 class="card-title">رصيدي</h4>
+                            <div class="d-lg-flex justify-content-between align-items-center">
+                              <h1 class="text-dark mb-0">$3258</h1>
+                              <p class="text-success mb-0 font-weight-medium">+30.56% ($121)</p>
+                            </div>
+                            <p class="mb-5 pb-1">الوديعة: <span class="font-weight-bold">$5430</span></p>
+                            <canvas id="my-balance"></canvas>
+                            <div class="border p-3 mt-2">
+                              <div class="row">
+                                <div class="col-sm-6 mb-4 mb-lg-0">
+                                  <div class="d-lg-flex justify-content-between align-items-center">
+                                    <div class="text-small text-dark">متاح :</div>
+                                    <span class="font-weight-bold text-dark text-small ">30.56%</span>
+                                  </div>
+                                  <div class="progress progress-sm mt-1">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="d-lg-flex justify-content-between align-items-center">
+                                    <div class="text-small text-dark">قيد الانتظار :</div>
+                                    <span class="font-weight-bold text-small text-dark">69.44%</span>
+                                  </div>
+                                  <div class="progress progress-sm mt-1">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-4 grid-margin grid-margin-lg-0 stretch-card">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="dotted-border p-3 mb-3">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <h4 class="card-title mb-1">مبيعات التنبؤ</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                  <canvas id="prediction-1"></canvas>
+                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
+                                  <p class="text-muted mb-0">مبيعات 350-985</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <canvas id="prediction-2"></canvas>
+                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
+                                  <p class="text-muted mb-0">مبيعات 350-985</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="dotted-border p-3">
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <h4 class="card-title mt-4 mb-1">تاريخ الأسهم</h4>
+                                </div>
+                                <div class="col-sm-6">
+                                  <canvas id="prediction-3"></canvas>
+                                  <h3 class="font-weight-bold mt-3 text-dark">$3258</h3>
+                                  <p class="mb-0 text-muted">مبيعات 350-985</p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <canvas id="prediction-4"></canvas>
+                                  <h3 class="font-weight-bold text-dark  mt-3">$3258</h3>
+                                  <p class="mb-0 text-muted">مبيعات 350-985</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <footer class="footer">
+            <div class="footer-inner-wraper">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © 2018 <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap Dash</a>. All rights reserved.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with <i class="mdi mdi-heart text-danger"></i></span>
+              </div>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="../../../assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="../../../assets/vendors/jquery-circle-progress/js/circle-progress.min.62"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../../assets/js/off-canvas.js"></script>
+    <script src="../../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../../assets/js/misc.js"></script>
+    <script src="../../../assets/js/settings.js"></script>
+    <script src="../../../assets/js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../../assets/js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+
+<!-- Mirrored from www.bootstrapdash.com/demo/connect-plus/jquery/template/demo_1/pages/layout/rtl-layout.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 19 Apr 2021 08:49:11 GMT -->
+</html>
